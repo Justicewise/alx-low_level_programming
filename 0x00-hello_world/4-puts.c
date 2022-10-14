@@ -1,5 +1,11 @@
-/* using the put function to print out on the screen*/
 #include<stdio.h>
+/**
+ * main - Entry point
+ *
+ * Description: 'using the puts function for output on the screen'
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
