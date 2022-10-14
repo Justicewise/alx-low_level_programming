@@ -1,1 +1,1 @@
-"My First look into programming in C using shell"
+My First look into programming in C using shell
