@@ -1,3 +1,4 @@
+#include <stdio.h>
 /**
 * main - Starting Point
 *
@@ -18,7 +19,7 @@ int main(void)
 		}
 		putchar(ch);
 		ch++;
-	} while(ch <= 'z');
+	} while (ch <= 'z');
 	putchar('\n');
 	return (0);
 }
