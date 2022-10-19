@@ -1,11 +1,11 @@
 #include "main.h"
 /**
- * * main - Starting point.
- * *
- * * Description: 'Printing putchar'
- * *
- * * Return: 0 always.
- * */
+* main - Starting point.
+*
+* Description: 'Printing putchar'
+*
+*Return: 0 always.
+*/
 
 int main(void)
 {
@@ -18,6 +18,5 @@ int main(void)
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-	return (0);
-	         
+	return (0);	         
 }
