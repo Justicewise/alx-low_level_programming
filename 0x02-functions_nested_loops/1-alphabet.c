@@ -7,9 +7,15 @@
 * Return: 0 (Success)
 */
 
-int main(void)
+void print_alphabet(void)
 {
-	_putchar(alph);
+	char alph = 'a';
+
+	while (alph <= 'z')
+	{
+		_putchar(alph);
+		alph++;
+	}
 	_putchar('\n');
-	return (0);
 }
+
