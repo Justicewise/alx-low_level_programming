@@ -1,10 +1,7 @@
 #include "main.h"
 /**
 * main - starting point
-*
-* Description: 'Printing alphabet a to z'
-*
-* Return: 0 (Success)
+* print_alphabet -> prints the lowercase alphabets
 */
 
 void print_alphabet(void)
