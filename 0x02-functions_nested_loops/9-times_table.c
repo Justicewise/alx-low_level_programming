@@ -6,6 +6,8 @@
  * Return: times table
  * add extra space past single digit
  */
+
+
 void times_table(void)
 {
 	int rone, cone, d;
@@ -38,9 +40,3 @@ void times_table(void)
 	}
 
 }
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-
