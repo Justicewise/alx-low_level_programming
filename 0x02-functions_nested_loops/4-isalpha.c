@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
-* _isupper - check uppercase character
-*
-* @c: the character to check
-*
-* Return: 1 if c is lowercase, 0 otherwise
+* _isalpha -> check uppercase character
+* @c: integer
+* Return:  returns 1 if c is lowercase, 0 otherwise
 */
 
 int _isalpha(int c)
