@@ -2,22 +2,38 @@
 #include <string.h>
 /**
  * print_rev - function to print string in reverse order
+ * fcounter is to first count to the end, n is counting backward
  * @s: use to store string to be reversed.
  */
 
 void print_rev(char *s)
+
 {
-	int length;
-	int i;
-	int j;
-	char tmp;
 
-	length = strlen(s);
+	int fcounter = 0;
 
-	for (i = 0, j = length - 1; i < j; i++, j--)
+	int i, n;
+
+
+
+	for (i = 0; s[i] != '\0'; i++)
+
 	{
-	       	tmp = s[i];
-		s[i] = s[j];
-		s[j] = tmp;
+
+		fcounter++;
+
 	}
+
+
+
+	for (n = (fcounter - 1); n >= 0; n--)
+
+	{
+
+		_putchar(s[n]);
+
+	}
+
+	_putchar('\n');
+
 }
