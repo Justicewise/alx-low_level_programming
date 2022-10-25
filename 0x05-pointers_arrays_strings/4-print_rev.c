@@ -13,7 +13,7 @@ void print_rev(char *s)
 
 	length = strlen(s);
 
-	for (int i = 0, j = length - 1; i < j; i++, j--)
+	for (i = 0, j = length - 1; i < j; i+`+, j--)
 	{
 		char tmp = s[i];
 
