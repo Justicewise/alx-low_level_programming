@@ -1,0 +1,19 @@
+#include "main.h"
+
+/**
+ * print_rev - function to print string in reverse order
+ * @s: use to store string to be reversed.
+ */
+
+void print_rev(char *s)
+{
+	int length = strlen(s);
+
+	for (int i = 0, j = length - 1; i < j; i++, j--)
+	{
+		char tmp = s[i];
+
+		s[i] = s[j];
+		s[j] = temp;
+	}
+}
