@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
-*_strcpy - Copy the given string
-* @dest: Location to copy string to
-* @src: String to copy to given location
-* Return: Pointer to dest
-*/
-
+ * *_strcpy - Copy the given string
+ * @dest: Location to copy string to
+ * @src: String to copy to given location
+ *
+ * Return: Pointer to dest
+ */
 char *_strcpy(char *dest, char *src)
 {
 	int i = 0;
@@ -22,21 +22,18 @@ char *_strcpy(char *dest, char *src)
 }
 
 /**
-* new_dog - Create a new dog struct
-* @name: Name of dog
-* @age: Age of dog
-* @owner: Owner of dog
-* Return: pointer to struct, NULL if fails
-*/
-
+ * new_dog - Create a new dog struct
+ * @name: Name of dog
+ * @age: Age of dog
+ * @owner: Owner of dog
+ *
+ * Return: pointer to struct, NULL if fails
+ */
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new_dog;
-
 	char *new_name;
-
 	char *new_owner;
-
 	int len;
 
 	new_dog = malloc(sizeof(dog_t));
