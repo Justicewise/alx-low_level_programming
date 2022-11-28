@@ -1,42 +1,42 @@
+
 #include "3-calc.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 /**
- * main - Run the program
- * @argc: Count of args given
- * @argv: Array of arg strings
+ * main - check the code for Holberton School students.
+ * @argc: argument count.
+ * @argv: argument vector.
  *
- * Return: 0 on success, print Error and exit with 98 if incorrect
- * number of args, exit with 99 if operator given is incorrect
+ * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
-	int (*func)(int, int);
-	int num1, num2, res;
+    int a, b;
+    int (*operation)(int, int);
 
-	if (argc == 4)
-	{
-		if (argv[2][1] != '\0')
-		{
-			printf("Error\n");
-			exit(99);
-		}
-		func = get_op_func(argv[2]);
-		if (func == NULL)
-		{
-			printf("Error\n");
-			exit(99);
-		}
-		num1 = atoi(argv[1]);
-		num2 = atoi(argv[3]);
-		res = func(num1, num2);
-		printf("%d\n", res);
-		return (0);
-	}
-	else
-	{
-		printf("Error\n");
-		exit(98);
-	}
+    if (argc != 4)
+    {
+        printf("Error\n");
+        exit(98);
+    }
+
+    if (argv[2][1])
+    {
+        printf("Error\n");
+        exit(99);
+    }
+
+    operation = get_op_func(argv[2]);
+
+    if (operation == NULL)
+    {
+        printf("Error\n");
+        exit(99);
+    }
+
+    a = atoi(argv[1]);
+    b = atoi(argv[3]);
+
+    printf("%d\n", operation(a, b));
+    return (0);
 }
+

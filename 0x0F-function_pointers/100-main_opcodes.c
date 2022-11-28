@@ -2,36 +2,39 @@
 #include <stdlib.h>
 
 /**
- * main - Print the opcodes of the function
- * @argc: Number of args given
- * @argv: Argument of number of bytes to print
+ * main - check the code for Holberton School students.
+ * @argc: argument count.
+ * @argv: argument vector.
  *
- * Return: 0 on success, Print Error for errors, exit value 1 if
- * incorrect # of args, exit value 2 if number of bytes is negative
+ * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
-	char *add;
-	int i, bytes;
+    char *opc = (char *) main;
+    int i, nbytes;
 
-	if (argc != 2)
-	{
-		printf("Error\n");
-		exit(1);
-	}
-	if (atoi(argv[1]) < 0)
-	{
-		printf("Error\n");
-		exit(2);
-	}
-	add = (char *)&main;
-	bytes = atoi(argv[1]);
-	i = 0;
-	while (i < bytes - 1)
-	{
-		printf("%02hhx ", add[i]);
-		i++;
-	}
-	printf("%02hhx\n", add[i]);
-	return (0);
+    if (argc != 2)
+    {
+        printf("Error\n");
+        exit(1);
+    }
+
+    nbytes = atoi(argv[1]);
+
+    if (nbytes < 0)
+    {
+        printf("Error\n");
+        exit(2);
+    }
+
+    for (i = 0; i < nbytes; i++)
+    {
+        printf("%02x", opc[i] & 0xFF);
+        if (i != nbytes - 1)
+            printf(" ");
+    }
+
+    printf("\n");
+    return (0);
 }
+
