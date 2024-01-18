@@ -1,18 +1,14 @@
 #include <stdio.h>
 /**
-* main - Starting point
-*
-* Description: 'Printing numbers'
-*
-* Return: 0 (Success)
-*/
-
+ *main-program entry point.
+ *Return:0 no error, non zero if error
+ */
 int main(void)
 {
-	int num;
+	int i;
 
-	for (num = 0; num < 10; num++)
-		putchar(num % 10 + '0');
+	for (i = '0'; i <= '9'; i++)
+		putchar(i);
 	putchar('\n');
 	return (0);
 }

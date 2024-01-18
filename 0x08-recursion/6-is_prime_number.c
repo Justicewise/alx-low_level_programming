@@ -1,33 +1,33 @@
 #include "main.h"
-
 /**
- * find_prime -main entry.
- * @x:int
- * @y:int
- * Description:aux func to find if a number is prime
- * Return:1 if x is prime
+ * is_prime - detects if an input number is a prime number.
+ * @n: input number.
+ * @c: iterator
+ * Return: 1 if n is a prime number. 0 if n is not a prime number.
  */
-
-int find_prime(int x, int y)
+int is_prime(unsigned int n, unsigned int c)
 {
-	if (x < 2)
-		return (0);
-	if (y * y > x)
-		return (1);
-	if (x % y == 0)
-		return (0);
-	else
-		return (find_prime(x, y + 1));
+	if (n % c == 0)
+	{
+		if (n == c)
+			return (1);
+		else
+			return (0);
+	}
+	return (0 + is_prime(n, c + 1));
 }
-
 /**
- * *is_prime_number -main entry.
- * *@n:char pointer
- * *Description:Function that checks if a number is a prime number
- * * Return:1 if is prime otherwise return 0
+ * is_prime_number - detects if an input number is a prime number.
+ * @n: input number.
+ * Return: 1 if n is a prime number. 0 if n is not a prime number.
  */
-
 int is_prime_number(int n)
 {
-	return (find_prime(n, 2));
+	if (n == 0)
+		return (0);
+	if (n < 0)
+		return (0);
+	if (n == 1)
+		return (0);
+	return (is_prime(n, 2));
 }

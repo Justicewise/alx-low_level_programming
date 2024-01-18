@@ -1,11 +1,8 @@
-#include <stdio.h>
 #include <unistd.h>
 /**
- * main-Entry point
+ *main-program entry point.
  *
- * Description:'printing to the staderr'
- *
- * Return: 1 if Sucess.
+ *Return: 1 on success.
  */
 int main(void)
 {

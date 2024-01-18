@@ -1,40 +1,34 @@
 #include "main.h"
 
 /**
- * find_square -main entry.
- * @x:int num to find sqr
- * @y: int sqr of x
- * Description:func that finds the square root of a number
- * Return:int
+ * power_operation - returns the natural square root of a number.
+ * @n: input number.
+ * @c: iterator.
+ * Return: square root or -1.
  */
-
-int find_square(int x, int y)
+int power_operation(int n, int c)
 {
- /*
-  *
-  * sqr root of x is a y number mult by itself
-  * sqr x = y * y
-  */
-
-int square = y * y;
-
-	if (square > x)
-		return (-1);
-
-	if (square == x)
-		return (y);
-	else
-		return (find_square(x, y + 1));
+	if (c % (n / c) == 0)
+	{
+		if (c * (n / c) == n)
+			return (c);
+		else
+			return (-1);
+	}
+	return (0 + power_operation(n, c + 1));
 }
-
 /**
- * _sqrt_recursion -main entry.
- * @n:int
- * Description:function that returns the natural square root of a number
- * Return:void
+ * _sqrt_recursion - returns the natural square root of a number.
+ * @n: input number.
+ * Return: natural square root.
  */
-
 int _sqrt_recursion(int n)
 {
-	return (find_square(n, 1));
+	if (n < 0)
+		return (-1);
+	if (n == 0)
+		return (0);
+	if (n == 1)
+		return (1);
+	return (power_operation(n, 2));
 }

@@ -1,20 +1,16 @@
 #include <stdio.h>
-/**
-* main - Starting point
-*
-* Description: 'printing alphabet a - z using while loop'
-*
-* Return: 0 (Success)
-*/
 
+/**
+ *main-program entry point.
+ *Return:0 if no error, non zero if error.
+ **/
 int main(void)
 {
-	char ch = 'a';
+	char i;
 
-	while (ch <= 'z')
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar(ch);
-		ch++;
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);

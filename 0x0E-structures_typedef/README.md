@@ -1,1 +1,1 @@
-structure and typedef
+README.md file 

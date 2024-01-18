@@ -1,1 +1,1 @@
-My First look into programming in C using shell
+This covers my low level programming on C programming language

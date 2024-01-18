@@ -1,1 +1,2 @@
-understnding the static and dynamic library creation 
+# Static Libraries in C programming
+

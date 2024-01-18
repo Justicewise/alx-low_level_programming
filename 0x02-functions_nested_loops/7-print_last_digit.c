@@ -1,34 +1,22 @@
 #include "main.h"
-
 /**
-* print_last_digit -> prints the last digit
-* @nld: the passed args
-* Return: the last digit
-*/
-int print_last_digit(int nld)
+ * print_last_digit-prints the last digit of an interger.
+ * @a:number to compute last digit.
+ * Return:last digit.
+ */
 
+
+
+int print_last_digit(int a)
 {
+	int last_digit;
 
-	int pld;
-
-
-
-	pld = (nld % 10);
-
-
-
-	if (pld < 0)
-
+	last_digit = a %  10;
+	if (last_digit < 0)
 	{
-
-		pld = (-1 * pld);
-
+		last_digit = last_digit * -1;
 	}
-
-
-
-	_putchar(pld + '0');
-
-	return (pld);
+	_putchar(last_digit + '0');
+	return (last_digit);
 
 }

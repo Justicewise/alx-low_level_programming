@@ -1,27 +1,21 @@
 #include <stdio.h>
-/**
-* main - Starting Point'
-*
-* Description: 'Displaying both lower and cap of alphabet using while loop'
-*
-* Return: 0 (Success)
-*/
 
+/**
+ *main-program entry point.
+ *Return:0 no error, non zero if error.
+ **/
 int main(void)
 {
-	char ch = 'a';
+	char i;
+	char j;
 
-	while (ch <= 'z')
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar(ch);
-		ch++;
+		putchar(i);
 	}
-	ch = 'A';
-
-	while (ch <= 'Z')
+	for (j = 'A'; j <= 'Z'; j++)
 	{
-		putchar(ch);
-		ch++;
+		putchar(j);
 	}
 	putchar('\n');
 	return (0);

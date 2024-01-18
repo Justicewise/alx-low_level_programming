@@ -1,25 +1,19 @@
 #include <stdio.h>
-/**
-* main - Starting Point
-*
-* Description: 'Printing alphabet leaving out q and e'
-*
-* Return: 0 *success'
-*/
 
+/**
+ *main-program entry point.
+ *Return:0 if no error, non zero if error.
+ */
 int main(void)
 {
-	char ch = 'a';
+	char i;
 
-	do {
-		if (ch == 'q' || ch == 'e')
-		{
-			ch++;
+	for (i = 'a'; i <= 'z'; i++)
+	{
+		if (i == 'e' || i == 'q')
 			continue;
-		}
-		putchar(ch);
-		ch++;
-	} while (ch <= 'z');
+		putchar(i);
+	}
 	putchar('\n');
 	return (0);
 }

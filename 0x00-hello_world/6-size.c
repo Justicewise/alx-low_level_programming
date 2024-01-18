@@ -1,12 +1,9 @@
 #include <stdio.h>
 /**
- * main-Entry point
+ *main -is the entry point for the program.
  *
- * DEscription:'knowing the size of my system'
- *
- * Return:always 0 (Sucess)
+ *Return:zero if no error, Non-zero value  if errors.
  */
-
 int main(void)
 {
 	printf("Size of a char: %ld byte(s)\n", sizeof(char));
